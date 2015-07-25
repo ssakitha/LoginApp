@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA0000"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <!-- Email Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:text="Username" />
+
+    <!-- Email input text -->
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip" />
+
+    <!-- Password Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dip"
+        android:text="Password" />
+
+    <!-- Password input text -->
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#ffffff" />
+
+    <!-- Login button -->
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+            android:layout_gravity="left|top"
+            android:gravity="center_vertical"
+            android:padding="5dip" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_weight="2"
+                android:text="KEEP ME LOGGED IN"
+        android:textColor="#ffffff"
+                 android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:layout_marginLeft="6px"
+        android:textColor="#ffffff"
+                 android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="#1492bf"
+                android:text="  Login  " />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+        android:textColor="#ffffff"
+            android:gravity="left"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6px"
+        android:textColor="#ffffff"
+                android:background="#BA0000"
+                 android:textStyle="bold"
+                android:onClick="signup"                
+                android:text="SIGN UP" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
